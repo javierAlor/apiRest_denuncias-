@@ -1,10 +1,12 @@
 Database
 
-CREATE TABLE api_rest.`user` (
+CREATE TABLE bdviolencia.`user` (
 	id INTEGER auto_increment NOT NULL,
-	nombre varchar(100) NULL,
-	apellido varchar(100) NULL,
-	usuario varchar(40) NULL,
+	agresor varchar(100) NULL,
+	estado_suceso varchar(100) NULL,
+	lugar_suceso varchar(40) NULL,
+	descripcion varchar(40) NULL,
+	
 	CONSTRAINT user_PK PRIMARY KEY (id),
 	CONSTRAINT user_UN UNIQUE KEY (usuario)
 )
