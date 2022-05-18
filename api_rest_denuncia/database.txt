@@ -1,0 +1,13 @@
+Database
+
+CREATE TABLE api_rest.`user` (
+	id INTEGER auto_increment NOT NULL,
+	nombre varchar(100) NULL,
+	apellido varchar(100) NULL,
+	usuario varchar(40) NULL,
+	CONSTRAINT user_PK PRIMARY KEY (id),
+	CONSTRAINT user_UN UNIQUE KEY (usuario)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8mb4
+COLLATE=utf8mb4_general_ci;
